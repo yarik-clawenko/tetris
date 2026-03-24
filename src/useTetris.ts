@@ -1,13 +1,6 @@
 import { useState, useCallback, useEffect } from 'react';
-import {
-  Board,
-  Tetromino,
-  TetrominoType,
-  GameState,
-  BOARD_WIDTH,
-  BOARD_HEIGHT,
-  TETROMINOES,
-} from './types';
+import type { Board, Tetromino, TetrominoType, GameState } from './types';
+import { BOARD_WIDTH, BOARD_HEIGHT, TETROMINOES } from './types';
 
 const createEmptyBoard = (): Board => {
   return Array.from({ length: BOARD_HEIGHT }, () => Array(BOARD_WIDTH).fill(0));

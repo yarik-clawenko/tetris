@@ -1,5 +1,6 @@
 import React from 'react';
-import { Board, BOARD_WIDTH, BOARD_HEIGHT, TETROMINOES, TetrominoType } from './types';
+import type { Board, TetrominoType } from './types';
+import { BOARD_WIDTH, BOARD_HEIGHT, TETROMINOES } from './types';
 
 interface GameBoardProps {
   board: Board;
